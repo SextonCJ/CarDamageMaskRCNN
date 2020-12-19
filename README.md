@@ -29,9 +29,14 @@ Tensorboard
 tensorboard --logdir=logs
 ```
 
-### Files
+### Sub Directories
+- __custom__ directory for images stored in train, test, validation folders as well as the annotations file via_region_data.json
+
+- __logs__ Conatain output of training for car damage instance segmentation. There is one directory for each experiment, with one weights file per epoch per the directory. The weights files are very large (~250MB) and therefore they are not included with this repo.
 
 - __mrcnn__ directory - from the matterport repo. Contains code and utilities for running mask rcnn. I have softlinked to the repo directory `ln -s Mask_RCNN/mrcnn mrcnn`
+
+### Files
 
 - __custom.py__ training file, is set up to override default matterport training configuration and hyper paramaters. Edit this file to fit your needs and configuration.
 
@@ -46,16 +51,3 @@ tensorboard --logdir=logs
 - __example_images.ipynb__ shows images tested on unseen data, alongside original data
 
 - __map_size.ipynb__ shows example of comparing map size of damage against original object detection (car). This could be used to calculate overall cost of damage
-
-
-### Input Images and JSON vector annotations
-
-The train and val subdirecories contain images and the via_region_data.json returned from annotation. The via_region_data.json must match exactly the jpeg files.
-
-### Trained Weights Files:
-
-In Subdirectory 'logs'
-
-This directory contains the output of training for car damage instance segmentation. There is one directory for each experiment, with one weights file per epoch per the directory. The weights files are very large (~250MB) and therefore they are not included with this repo.
-
-### Examlpe images
