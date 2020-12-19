@@ -131,3 +131,4 @@ dmypy.json
 
 # Deep learning models / weights
 *.h5
+Mask_RCNN/*
