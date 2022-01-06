@@ -6,7 +6,7 @@ The goal of this project is to to predict the location and severity of damage to
 
 ### Pre-requisites
 - Clone the Matterport repo into this directory [Matterport Mask RCNN](https://github.com/matterport/Mask_RCNN)
-- To use pre trained weights for coco, you need to download the wights file and save in this directory [coco weights](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)
+- To use pre trained weights for coco, you need to download the weights file and save in this directory [coco weights](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5)
 
 ## Data
 Training and validation data was made available through [Kaggle](https://www.kaggle.com/anujms/car-damage-detection#0001.JPEG)
